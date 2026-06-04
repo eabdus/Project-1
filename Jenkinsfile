@@ -39,6 +39,14 @@ pipeline {
             }
          }
       }
-   }
+      stage("Quality Gate") {
+          steps {
+            script{
+              waitForQualityGate abortPipeline: false, credentialsId: 'Sonar-Token'
+                 sh 'mvn clean package sonar:sonar'
+                }
+            } 
+        }    
+    }
 }
 
