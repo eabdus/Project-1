@@ -30,6 +30,13 @@ pipeline {
                  sh "mvn test"
            }
        }
+      stage("build & SonarQube analysis") {
+          node {
+              withSonarQubeEnv(credentialsId: 'Sonar-Token') {
+                 sh 'mvn sonar:sonar'
+              }    
+          }
+      }
    }
 }
 
