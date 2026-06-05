@@ -43,7 +43,6 @@ pipeline {
           steps {
             script{
               waitForQualityGate abortPipeline: false, credentialsId: 'Sonar-Token'
-                 sh 'mvn clean package sonar:sonar'
                 }
             } 
         }    
