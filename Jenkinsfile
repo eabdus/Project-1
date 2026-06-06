@@ -8,7 +8,7 @@ pipeline {
 	    APP_NAME = "register-app-Project-1"
             RELEASE = "1.0.0"
             DOCKER_USER = "eabdus"
-            DOCKER_PASS = 'Welcome15'
+            DOCKER_PASS = 'Dockerhub'
             IMAGE_NAME = "${DOCKER_USER}" + "/" + "${APP_NAME}"
     }
 	
