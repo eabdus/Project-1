@@ -5,10 +5,10 @@ pipeline {
         maven 'Maven3'
     }
     environment {
-	    APP_NAME = "register-app-pipeline"
+	    APP_NAME = "register-app-Project-1"
             RELEASE = "1.0.0"
-            DOCKER_USER = "ashfaque9x"
-            DOCKER_PASS = 'Dockerhub'
+            DOCKER_USER = "eabdus"
+            DOCKER_PASS = 'Welcome15'
             IMAGE_NAME = "${DOCKER_USER}" + "/" + "${APP_NAME}"
             IMAGE_TAG = "${RELEASE}-${BUILD_NUMBER}"
 	    JENKINS_API_TOKEN = credentials("JENKINS_API_TOKEN")
