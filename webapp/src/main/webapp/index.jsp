@@ -33,6 +33,6 @@
 
    <h1> Thank You </h1>
    <br>
-   <h1> Stay Positive Thinking. yes </h1>
+   <h1> Stay Positive Thinking. You are smart keep moving. </h1>
    
 </form>
